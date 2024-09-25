@@ -1,0 +1,19 @@
+<template id="dieTemplate">
+    <!--  d20  -->
+    <div class="DiceContainer" id="containerID">
+            <!-- Image -->
+            <!-- <img class="diceImage" src="../Dice-pngs/d20-die.png" alt="d20 die"> -->
+        <img class="diceImage" src="image" alt="placeholder die">
+            <!-- Form -->
+            <!-- <form onsubmit="rollDice(parseInt(dice.value),20,d20.id,parseInt(mod.value)); return false;">-->
+        <form onsubmit="let placeholder = 0" >
+                Dice <br>
+                <input type="number" id="dice" value="1" ><br>
+                Modifier<br>
+                <input type="number" id="mod" value="0"><br>    
+                <input type="submit" value="Roll It">
+        </form>
+            <!-- Output -->
+        <p class="output" name="result" id="resultID">0</p>
+    </div> 
+</template>

@@ -1,0 +1,111 @@
+                <!--  Dice Rollers  -->
+                <div class="diceWrapper">
+                
+                    <!--  d4  -->
+                    <div class="DiceContainer" id="4container" >
+                        <!-- Image -->
+                    <!--<div class="imageContainer"> -->
+                        <img class="diceImage" src="../Dice-pngs/d4-die.png" alt="d4 die">
+                    <!--</div>-->
+                        <!-- Form -->
+                    <form onsubmit="rollDice(parseInt(dice.value),4,d4.id,parseInt(mod.value)); return false;">
+                        Dice <br>
+                        <input type="number" id="dice" value="1"><br><br>
+                        Modifier<br>
+                        <input type="number" id="mod" value="0"><br>    
+                        <input type="submit" value="Roll It">
+                    </form>
+                        <!-- Output -->
+                    <p class="output" id="d4">0</p>
+                    </div>
+
+                    <!--  d6  -->
+                    <div class="DiceContainer" id="6container">
+                        <!-- Image -->
+                    <!--<div class="imageContainer"> -->
+                        <img class="diceImage" src="../Dice-pngs/d6-die.png" alt="d6 die">
+                    <!--</div>-->
+                        <!-- Form -->
+                    <form onsubmit="rollDice(parseInt(dice.value),6,d6.id,parseInt(mod.value)); return false;">
+                        Dice <br>
+                        <input type="number" id="dice" value="1"><br><br>
+                        Modifier<br>
+                        <input type="number" id="mod" value="0"><br>    
+                        <input type="submit" value="Roll It">
+                    </form>
+                        <!-- Output -->
+                    <p class="output" name="result" for="dice mod" id="d6">0</p>
+                    </div>
+
+                    <!--  d8  -->
+                    <div class="DiceContainer" id="8container">
+                        <!-- Image -->
+                    <!--<div class="imageContainer"> -->
+                        <img class="diceImage" src="../Dice-pngs/d8-die.png" alt="d8 die">
+                    <!--</div>-->
+                        <!-- Form -->
+                    <form onsubmit="rollDice(parseInt(dice.value),8,d8.id,parseInt(mod.value)); return false;">
+                        Dice <br>
+                        <input type="number" id="dice" value="1"><br><br>
+                        Modifier<br>
+                        <input type="number" id="mod" value="0"><br>    
+                        <input type="submit" value="Roll It">
+                    </form>
+                        <!-- Output -->
+                    <p class="output" name="result" for="dice mod" id="d8">0</p>
+                    </div>
+
+                    <!--  d10  -->
+                    <div class="DiceContainer" id="10container">
+                            <!-- Image -->
+                        <!--<div class="imageContainer"> -->
+                            <img class="diceImage" src="../Dice-pngs/d10-die.png" alt="d10 die">
+                        <!--</div>-->
+                            <!-- Form -->
+                        <form onsubmit="rollDice(parseInt(dice.value),10,d10.id,parseInt(mod.value)); return false;">
+                            Dice <br>
+                            <input type="number" id="dice" value="1"><br><br>
+                            Modifier<br>
+                            <input type="number" id="mod" value="0"><br>    
+                            <input type="submit" value="Roll It">
+                        </form>
+                            <!-- Output -->
+                        <p class="output" name="result" for="dice mod" id="d10">0</p>
+                    </div>
+
+                    <!--  d12  -->
+                    <div class="DiceContainer" id="12container">
+                        <!-- Image -->
+                    <!--<div class="imageContainer"> -->
+                        <img class="diceImage" src="../Dice-pngs/d12-die.png" alt="d12 die">
+                    <!--</div>-->
+                        <!-- Form -->
+                    <form onsubmit="rollDice(parseInt(dice.value),12,d12.id,parseInt(mod.value)); return false;">
+                        Dice <br>
+                        <input type="number" id="dice" value="1"><br><br>
+                        Modifier<br>
+                        <input type="number" id="mod" value="0"><br>    
+                        <input type="submit" value="Roll It">
+                    </form>
+                        <!-- Output -->
+                    <p class="output" name="result" for="dice mod" id="d12">0</p>
+                    </div>
+                    <!--  d20  -->
+                    <div class="DiceContainer" id="20container">
+                        <!-- Image -->
+                    <!--<div class="imageContainer"> -->
+                        <img class="diceImage" src="../Dice-pngs/d20-die.png" alt="d20 die">
+                    <!--</div>-->
+                        <!-- Form -->
+                    <form onsubmit="rollDice(parseInt(dice.value),20,d20.id,parseInt(mod.value)); return false;">
+                        Dice <br>
+                        <input type="number" id="dice" value="1"><br><br>
+                        Modifier<br>
+                        <input type="number" id="mod" value="0"><br>    
+                        <input type="submit" value="Roll It">
+                    </form>
+                        <!-- Output -->
+                    <p class="output" name="result" for="dice mod" id="d20">0</p>
+                    </div> 
+
+                </div>

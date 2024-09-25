@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Dice Roller </title>
+        <link rel="stylesheet" href="../CSS/Main.css" />
+        <link rel="stylesheet" href="../CSS/DiceRoller.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--  scripts  -->
+        <!-- <script src="../JS/Main.js"></script> -->
+        <script src="../JS/DiceRoller.js"></script> 
+        <script src="../JS/DetectMobile.js"></script>
+    </head>
+
+    <body>
+    <!--  Wrapper  -->
+        <div id="wrapper">
+            
+            <!--  Main  -->
+            <div id="main">
+                <div class="inner">
+                    <!--  Header  -->
+                        <header id="header">
+                            <a href="index.html" class="logo"><strong>My Site</strong> By me</a>
+                            <strong>
+                                <ul class="icons">
+                                    <li><a href="#" class="fa fa-linkedin-square"><span class="label">linkedin</span></a></li>
+                                    <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
+                                    <li><a href="#" class="fa fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                </ul>
+                            </strong>
+                        </header>
+                        
+
+                        <!-- Banner -->
+                        <section id="banner">
+                            <div class="content">
+                                <header>
+                                    <strong>
+                                        <h1>Dice Roller<br />
+                                        by Ashton Foster</h1> 
+                                    </strong>
+                                    <p>A dynamically created dice roller site</p>
+                                </header>
+                                <p> My supercool header</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button big">Learn More</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+
+                    
+                    <div class="dice">
+                        <!--  Dice Rollers  -->
+                        <div class="diceWrapper" id="AllDiceHolder">
+                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--  Sidebar  -->
+            <div id="sidebar">
+                <!-- Search -->
+                    <section id="search" class="alt">
+                        <form method="post" action="#">
+                            <input type="text" name="query" id="query" placeholder="Search" />
+                        </form>
+                        
+                    </section>
+                <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="generic.html">Generic</a></li>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="DiceRoller.html">Dice Roller</a></li>
+                            <li>
+                                <span class="opener">Submenu</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Etiam Dolore</a></li>
+                            <li><a href="#">Adipiscing</a></li>
+                            <li>
+                                <span class="opener">Another Submenu</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Maximus Erat</a></li>
+                            <li><a href="#">Sapien Mauris</a></li>
+                            <li><a href="#">Amet Lacinia</a></li>
+                        </ul>
+                    </nav>
+            </div>
+
+
+        </div>
+
+
+
+
+    </body>
+
+
+    
+
+
+        <!--template-->
+
+        <template id="dieTemplate">
+            <!--  d20  -->
+            <div class="DiceContainer" id="placeholdContainerID">
+                    <!-- Image -->
+                <button type="button" id="placeholdRoll" value="Roll It"><div class="diceImageHolder">
+                    
+                    <img class="diceImage" id="placeholdImage" src="image" alt="placeholder die"><br>
+                    <div id="name">Dice</div>
+                    </div>
+                </button>
+                    <!-- Form -->
+                <div class="inputs" >
+                        <input type="number" id="placeholdDice" value="1" min="0" ><br>
+                        <input type="number" id="placeholdMod" value="0" >
+                </div>
+                    <!-- Output -->
+                <div class="outputs" >
+                    <p class="output" name="result" id="placeholdResultID">0</p>
+                    <div id="rollName"></div>
+                </div>
+                
+            </div> 
+
+        </template>
+
+        <script>
+            window.addEventListener("load",createCoreDieList("AllDiceHolder"));
+
+            function createCoreDieList(holder){
+                createDie(4,`../Dice-pngs/d${4}-die.png`,holder);
+                createDie(6,`../Dice-pngs/d${6}-die.png`,holder);
+                createDie(8,`../Dice-pngs/d${8}-die.png`,holder);
+                createDie(10,`../Dice-pngs/d${10}-die.png`,holder);
+                createDie(12,`../Dice-pngs/d${12}-die.png`,holder);
+                createDie(20,`../Dice-pngs/d${20}-die.png`,holder);
+                createDie(2,null,holder);
+            }
+
+            function createDie(faces,image,holderId){
+                if(image==null){
+                    image = '../Dice-pngs/default.png'
+                }
+                //alert("Building d"+faces);
+                let home = document.getElementById(holderId);
+                let template = document.getElementById("dieTemplate");
+                let temp = template.content.cloneNode(true);
+                home.appendChild(temp);
+
+                var Container = document.getElementById("placeholdContainerID");
+                var Result = document.getElementById("placeholdResultID");
+                var Image = document.getElementById("placeholdImage");
+                var Button = document.getElementById("placeholdRoll");
+                var Dice= document.getElementById("placeholdDice");
+                var Mod= document.getElementById("placeholdMod");
+
+                var name = document.getElementById('name');
+                var rollName = document.getElementById('rollName');
+                name.innerText=`D${faces}`;
+                name.id = `d${faces}-rollName`;
+                rollName.id = `d${faces}-discriptor`;
+                Container.id=`d${faces}-container`;
+                Result.id=`d${faces}-result`;
+                Image.src=image;
+                Image.alt=`picture of a d${faces} die`;
+                Image.id=`d${faces}-image`
+                Dice.id= `d${faces}-amount`;
+                Mod.id= `d${faces}-modifier`;
+                Button.id=`roll-d${faces}`;
+
+                home.appendChild(Container);
+                createListener(Button.id,Dice.id,Mod.id,Result.id,rollName.id,faces);
+
+            }
+
+        </script>
+</html>

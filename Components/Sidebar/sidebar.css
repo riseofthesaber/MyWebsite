@@ -1,0 +1,94 @@
+/* Sidebar */
+
+#sidebarButton{
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: "Lato", sans-serif;
+    position: fixed;
+    font-size: 3em;
+    font-weight:bolder;
+    font-weight:950;
+    margin-left: 0.4em; 
+    margin-top: 1em;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: white;
+    /* background-color: inherit; */
+  }
+  
+#sidebar {
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+    height: 100%;
+    position: fixed;
+    z-index: 10000;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    background-color: #f5f6f7;
+    /* font-size: 0.9em; */
+    width: 24em; 
+    padding-top: 60px;
+} 
+#sidebar #menu{
+    padding: 8px 8px 8px 32px;
+    overflow-x: hidden;
+    width: 15em; 
+}
+  
+#sidebar #search{
+    padding: 8px 8px 8px 8px;
+}
+  
+#sidebar .closebtn{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+#sidebar h2 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: normal;
+    /* font-family: Varela Round; */
+    font-size: 1.38889em; 
+}
+  
+#sidebar li {
+      font-family: "Varela Round", sans-serif;
+      font-weight: normal;
+      /* font-family: Varela Round; */
+      /* font-size: 1.38889em;  */
+}
+  
+#sidebar span{
+      font-size: 1.38889em;
+}
+    
+  
+    
+@media screen and (max-width: 1680px) {
+      #sidebar {
+        width: 24em; }
+}
+@media screen and (max-width: 1280px) {
+      #sidebar {
+        box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        z-index: 10000; }
+}

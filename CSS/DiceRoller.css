@@ -1,0 +1,116 @@
+
+      /*THE DICE*/
+
+      .dice > *{
+        color:#ffffff;
+      }
+.diceWrapper{
+  /* margin: 80px; */
+  color:#ffffff;
+  border: 2px solid;
+  border-color: #116a6a;
+  border-radius: 5px;
+    display: grid; 
+    grid-template-columns: minmax(400px,1fr) minmax(400px,1fr);
+    padding: 10px;
+    gap: 30px 30px;
+    margin-bottom: 30px;  
+}
+
+
+
+    .DiceContainer{
+        margin:0;
+        height: 10em;
+        min-width: 400px;
+        border-radius: 5px;
+        background-color: #116a6a;
+        padding: 10px;
+        display: grid; 
+        grid-template-columns: 200px 1fr 150px;
+        grid-template-rows: 10em;
+        gap: 10px 10px;
+        font-size: 1.5em;
+    }
+        
+    .DiceContainer .outputs{
+      min-width: 150px;
+      text-align: center;
+      vertical-align: middle;
+    }    
+    .DiceContainer .output{
+        font-size: 4em;
+    }
+    .DiceContainer > p{
+        margin: 0;
+        text-align: center;
+    }
+
+        .diceImageHolder{
+            text-align: center;
+            vertical-align: middle;
+        }
+            .diceImage{
+                width: 10em;
+                height:10em;
+                object-fit: contain;
+            }
+      
+      .DiceContainer .inputs{
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .DiceContainer button {
+          border: none;
+          cursor: pointer;
+          appearance: none;
+          background-color: inherit;}            
+      .DiceContainer input {
+          text-align: center;
+          height: 2em;
+          width: 100px;
+          font-size: 2em;
+          margin:0;
+          padding:0;
+          background-color: #ffffff3f;
+          border: 0;
+        }
+
+    @media screen and (max-width: 1200px) {
+  
+        .diceWrapper{
+          /* margin-left: 80px; */
+          /* margin-right:80px; */
+            padding: 15px 15px 15px 15px;
+            flex-wrap: wrap;
+            grid-template-columns: 1fr;
+        }
+        .DiceContainer {
+            margin-left:auto;
+            margin-right:auto;
+            height: auto;
+            /* max-height: 20em; */
+            float: none;
+            width: 96%;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+
+        @media screen and (max-width: 630px) {
+          .diceWrapper{
+            /* margin-left: 8px; */
+            /* margin-right:8px; */
+          }
+        }
+
+        @media screen and (max-width: 420px) {
+
+          .DiceContainer{
+            height: 40em;
+            max-height: null;
+          }
+          
+        }
+    

@@ -1,0 +1,230 @@
+/*@import url(fontawesome-all.min.css);*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline; }
+
+
+  header{
+    color: #3d4449;
+  }
+
+body {
+    font-size: 100%;
+    font-family: Varela Round;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8em;
+  }
+
+body {
+  background: #ffffff; 
+}
+
+
+#main {
+    width: 100%; 
+  }
+    #main > .inner {
+        padding: 0 6em 0.1em 6em ;
+        margin: 0 auto;
+        max-width: 110em; } 
+
+/* Type */
+body, input, select, textarea {
+  line-height: 1.65; }
+  @media screen and (max-width: 1680px) {
+    body, input, select, textarea {
+      font-size: 11pt; } }
+  @media screen and (max-width: 1280px) {
+    body, input, select, textarea {
+      font-size: 10pt; } }
+  @media screen and (max-width: 360px) {
+    body, input, select, textarea {
+      font-size: 9pt; } }
+
+/* Banner */
+#banner {
+  padding: 6em 0 4em 0 ;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; 
+  text-align: center;
+}
+  #banner h1 {
+    margin-top: -0.125em; }
+  #banner .content {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 50%; }
+
+    /* Icons */
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0; }
+  ul.icons li {
+    display: inline-block;
+    padding: 0 3em 0 0; }
+    ul.icons li:last-child {
+      padding-right: 0; }
+    ul.icons li .fa {
+      color: inherit; 
+      text-decoration: none;
+      border-bottom: none;}
+      ul.icons li .fa:before {
+        font-size: 3em; }
+        .icons .label {
+          display: none; }
+
+
+
+/* Sidebar */
+
+#sidebarButton{
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: "Lato", sans-serif;
+  position: fixed;
+  font-size: 3em;
+  font-weight:bolder;
+  font-weight:950;
+  margin-left: 0.4em; 
+  margin-top: 1em;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: white;
+  /* background-color: inherit; */
+}
+
+#sidebar {
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  background-color: #f5f6f7;
+  /* font-size: 0.9em; */
+  width: 24em; 
+  padding-top: 60px;
+} 
+#sidebar #menu{
+  padding: 8px 8px 8px 32px;
+  overflow-x: hidden;
+  width: 15em; 
+}
+
+#sidebar #search{
+  padding: 8px 8px 8px 8px;
+}
+
+#sidebar .closebtn{
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+#sidebar h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal;
+  /* font-family: Varela Round; */
+  font-size: 1.38889em; }
+
+  #sidebar li {
+    font-family: "Varela Round", sans-serif;
+    font-weight: normal;
+    /* font-family: Varela Round; */
+    /* font-size: 1.38889em;  */
+  }
+
+  #sidebar span{
+    font-size: 1.38889em;
+  }
+  
+
+  
+  @media screen and (max-width: 1680px) {
+    #sidebar {
+      width: 24em; }
+ }
+  @media screen and (max-width: 1280px) {
+    #sidebar {
+      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 10000; }
+     }
+     
+
+
+
+
+
+
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background-color: #a2d4d450;
+  border-bottom: solid 5px #116a6a;
+  padding: 6em 0 1em 0;
+  position: relative; }
+  #header > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0; }
+  #header .logo {
+    padding-left: 80px;
+    border-bottom: 0;
+    color: inherit;
+    /* font-family: "Roboto Slab", serif; */
+    font-size: 2em; } 
+  #header .icon {
+    text-align: right; }
+
+
+
+
