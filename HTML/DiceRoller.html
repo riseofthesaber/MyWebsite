@@ -13,23 +13,19 @@
     </head>
 
     <body>
+        <!-- attempted fix to a firefox bug -->
+        <script>0</script>
+
     <!--  Wrapper  -->
         <div id="wrapper">
             
             <!--  Main  -->
             <div id="main">
                 <div class="inner">
-                    <!--  Header  -->
-                        <header id="header">
-                            <a href="index.html" class="logo"><strong>My Site</strong> By me</a>
-                            <strong>
-                                <ul class="icons">
-                                    <li><a href="#" class="fa fa-linkedin-square"><span class="label">linkedin</span></a></li>
-                                    <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
-                                    <li><a href="#" class="fa fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                </ul>
-                            </strong>
-                        </header>
+                            <!--  Header  -->
+                            <!-- <script src="../components/Header/header.js"></script> -->
+                            <link rel="stylesheet" type="text/css" href="../components/Header/header.css" />
+                            <div w3-include-html="../components/Header/header.html"></div>
                         
 
                         <!-- Banner -->
@@ -63,8 +59,9 @@
 
 
             <!--  Sidebar  -->
-                    <!--  Sidebar  -->
-                    <div w3-include-html="../components/Sidebar/sidebar.html"></div>
+            <script src="../components/Sidebar/sidebar.js"></script>
+            <link rel="stylesheet" type="text/css" href="../components/Sidebar/sidebar.css" />
+            <div w3-include-html="../components/Sidebar/sidebar.html"></div>
         
         
         </div>

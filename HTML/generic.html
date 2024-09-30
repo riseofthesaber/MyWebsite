@@ -18,17 +18,9 @@
                         <div class="inner">
                             
                             <!--  Header  -->
-                                <header id="header">
-                                    <button id = "sidebarButton" type="button" onclick="toggleSidebar()">☰</button>
-                                    <a href="index.html" class="logo"><strong>My Site</strong> By me</a>
-                                    <strong>
-                                        <ul class="icons">
-                                            <li><a href="#" class="fa fa-linkedin-square"><span class="label">linkedin</span></a></li>
-                                            <li><a href="#" class="fa fa-github"><span class="label">Github</span></a></li>
-                                            <li><a href="#" class="fa fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        </ul>
-                                    </strong>
-                                </header>
+                            <!-- <script src="../components/Header/header.js"></script> -->
+                            <link rel="stylesheet" type="text/css" href="../components/Header/header.css" />
+                            <div w3-include-html="../components/Header/header.html"></div>
                                 
         
                                 <!-- Banner -->
@@ -51,6 +43,9 @@
                         </div>
                     </div> 
                     
+                    <!--  Sidebar  -->
+                    <script src="../components/Sidebar/sidebar.js"></script>
+                    <link rel="stylesheet" type="text/css" href="../components/Sidebar/sidebar.css" />
                     <div w3-include-html="../components/Sidebar/sidebar.html"></div>
                     
                 </div>

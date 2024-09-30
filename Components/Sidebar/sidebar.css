@@ -1,22 +1,29 @@
-/* Sidebar */
 
-#sidebarButton{
+/* Sidebar button */
+.container {
+    display: inline-block;
+    cursor: pointer;
     position: fixed;
     left: 0;
     top: 0;
-    font-family: "Lato", sans-serif;
-    position: fixed;
-    font-size: 3em;
-    font-weight:bolder;
-    font-weight:950;
-    margin-left: 0.4em; 
-    margin-top: 1em;
+    margin-left: 1.5em; 
+    margin-top: 6em;
     border: none;
     cursor: pointer;
     appearance: none;
-    background-color: white;
-    /* background-color: inherit; */
   }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+/* Sidebar */
   
 #sidebar {
     left: 0;
