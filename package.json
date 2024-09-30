@@ -1,0 +1,13 @@
+{
+  "name": "mywebsite",
+  "version": "0.0.1",
+  "description": "a website to build new skills and keep my old ones fresh, and to showcase some of my stuff.",
+  "main": "JS/Main.js",
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

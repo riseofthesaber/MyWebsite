@@ -12,4 +12,4 @@ run this command:
 --  node server.js
 
 then visit this address in a browser to view it:
---  http://localhost:8080
+--  http://localhost:8080/HTML/index.html
