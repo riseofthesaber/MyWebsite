@@ -9,7 +9,7 @@ currently to start the system
 navigate in the command line to the folder labeled MyWebsite:
 
 run this command: 
---  node server.js
+--  npm run start
 
 then visit this address in a browser to view it:
 --  http://localhost:8080/HTML/index.html
