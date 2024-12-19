@@ -115,36 +115,44 @@ h6 {
   font-size: 0.7em; }
 
 
-      
+
+  
 /* Banner */
 /* Banner */
 #banner {
   padding: 6em 0 4em 0 ;
-  display: flex; }
+  display: flex; 
+  max-height: 100%;
+  border-bottom: solid 1px #5a5a5a73;
+}
+
+#banner > .content{
+  max-height: 100%;
+}
+
   #banner h1 {
     margin-top: -0.125em; }
   #banner .content {
     
     flex-grow: 1;
    
-    flex-shrink: 1;
-    width: 50%; }
-  #banner .imageFrame{
-    border: solid #3d4449;
-    border-width: 10px;
-  }
-  #banner .image {
-   
-    flex-grow: 0;
     flex-shrink: 0;
-    display: block;
-    margin: 0 0 2em 4em;
     width: 50%; }
+
+  #banner .image {
+    width: 50%; 
+    /* display: block;
+    border: solid #3d4449;
+    border-width: 10px; */
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 0 2em 4em;
+    max-height: 500px;
+  }
     #banner .image img {
-      border: solid #3d4449;
-      border-width: 10px;
+
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
       width: 100%; }
 
@@ -171,3 +179,106 @@ h6 {
     #banner .image {
       max-height: 35vh; } }
 
+
+
+/* Button */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0.375em;
+  border: 0;
+  box-shadow: inset 0 0 0 2px  #116a6a;
+  color:  #116a6a !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  height: 3.5em;
+  letter-spacing: 0.075em;
+  line-height: 3.5em;
+  padding: 0 2.25em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    background-color: rgba(0, 209, 178, 0.05); }
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  button:active,
+  .button:active {
+    background-color: rgba(0, 209, 178, 0.15); }
+  input[type="submit"].icon:before,
+  input[type="reset"].icon:before,
+  input[type="button"].icon:before,
+  button.icon:before,
+  .button.icon:before {
+    margin-right: 0.5em; }
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  button.fit,
+  .button.fit {
+    width: 100%; }
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  button.small,
+  .button.small {
+    font-size: 0.6em; }
+  input[type="submit"].large,
+  input[type="reset"].large,
+  input[type="button"].large,
+  button.large,
+  .button.large {
+    font-size: 1em;
+    height: 3.65em;
+    line-height: 3.65em; }
+  input[type="submit"].primary,
+  input[type="reset"].primary,
+  input[type="button"].primary,
+  button.primary,
+  .button.primary {
+    background-color:  #116a6a;
+    box-shadow: none;
+    color: #ffffff !important; }
+    input[type="submit"].primary:hover,
+    input[type="reset"].primary:hover,
+    input[type="button"].primary:hover,
+    button.primary:hover,
+    .button.primary:hover {
+      background-color:  #178b8b; }
+    input[type="submit"].primary:active,
+    input[type="reset"].primary:active,
+    input[type="button"].primary:active,
+    button.primary:active,
+    .button.primary:active {
+      background-color:  #21cfcf; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  button.disabled,
+  button:disabled,
+  .button.disabled,
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.25; }

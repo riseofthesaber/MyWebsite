@@ -13,3 +13,6 @@ run this command:
 
 then visit this address in a browser to view it:
 --  http://localhost:8080/HTML/index.html
+
+
+currently the image displayed on the index page has to be 736x512 px in size or similar to work
