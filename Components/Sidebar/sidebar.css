@@ -23,6 +23,9 @@
     transition: 0.4s;
   }
 
+
+
+
 /* Sidebar */
   
 #sidebar {
@@ -44,10 +47,13 @@
     overflow-x: hidden;
     width: 15em; 
 }
-  
+
 #sidebar #search{
     padding: 8px 8px 8px 8px;
 }
+#search form input[type="text"] {
+padding-right: 2.75em; }
+
   
 #sidebar .closebtn{
     border: none;

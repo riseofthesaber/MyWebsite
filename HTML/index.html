@@ -5,6 +5,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../CSS/Main.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--  main needs to be here for some reason or else sidbar has errors -->
         <script src="../JS/Main.js"></script>
     </head>
 
@@ -22,8 +23,7 @@
 
                     <!--  Main  -->
                     <div id="main">
-                        <!--  Header  -->
-                        <!-- <script src="../components/Header/header.js"></script> -->
+                        <!--  Header component  -->
                         <link rel="stylesheet" type="text/css" href="../components/Header/header.css" />
                         <div w3-include-html="../components/Header/header.html"></div>
 
@@ -47,8 +47,6 @@
                                         <a href="#" class="button big">Hire Me!</a>
                                     </div>
                                         <span class="image object">
-                                            <!-- <img src="../images/HeadshotTemp.jpeg" alt="" /> -->
-                                            <!-- <img src="../images/pic10.jpg" alt="" /> -->
                                             <img src="../images/SquarePhoto.jpeg" alt="" />
                                         </span>
 
@@ -57,7 +55,7 @@
                                 <!-- Section -->
 								<section id = "Section1">
 									<header class="major">
-										<h2>Erat lacinia</h2>
+										<h2>About me</h2>
 									</header>
 									<div class="features">
 										<article>
@@ -90,13 +88,54 @@
 										</article>
 									</div>
 								</section>
+
+                            <!-- Section -->
+								<section>
+									<header class="major">
+										<h2>What I do</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="MyResume.html" class="image"><img src="../images/pic01.jpg" alt="" /></a>
+											<h3>My professional resume</h3>
+											<p>Take a look at my current professional resume and download a copy for yourself</p>
+											<ul class="actions">
+												<li><a href="MyResume.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="../images/pic02.jpg" alt="" /></a>
+											<h3>Experience</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="../images/pic03.jpg" alt="" /></a>
+											<h3>Projects</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="../images/pic04.jpg" alt="" /></a>
+											<h3>Things I do for fun</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
         
                         </div>
                     </div>
-        
+                    
 
                 </div>
-
+                <!-- Scripts -->
                 <script>
                     includeHTML();
                 </script>
