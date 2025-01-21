@@ -1,6 +1,6 @@
 
 /* Sidebar button */
-.container {
+#sidebarButton {
     display: inline-block;
     cursor: pointer;
     position: fixed;

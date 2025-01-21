@@ -1,4 +1,5 @@
 var http = require('http');
+var https = require("https");
 var url = require('url');
 var fs = require('fs');
 
@@ -9,7 +10,7 @@ http.createServer(function (req, res) {
   var filename = "." + q.pathname;
 
   //check the type of file the url requests
-  //if it is html or css it will do something
+  //if it is html or css it will write out to the result
   if (req.url.indexOf('.html') != -1 || req.url === '/') {
     // send your html here
 
@@ -34,6 +35,24 @@ http.createServer(function (req, res) {
       res.write(data);
       return res.end();
     });
+}else if (req.url.indexOf('.pdf') != -1) {
+  // still working on the pdf
+
+  fs.access(filename, fs.constants.R_OK, (err) => {
+    if (err) {
+      console.error('PDF File does not exist or you do not have read permissions.');
+    }
+  });
+
+  fs.readFile(filename, function(err, data) {
+    if (err) {
+      res.writeHead(404, {'Content-Type': 'application/pdf'});
+      return res.end("404 Not Found \n path:" +q.pathname+"could not be found or accessed");
+    } 
+    res.writeHead(200, {'Content-Type': 'application/pdf'});
+    res.write(data);
+    return res.end();
+  });
 } else {
   // a generic case
 
@@ -49,4 +68,5 @@ http.createServer(function (req, res) {
 }
   
 }).listen(8080);
+
 console.log('Server running at http://localhost:8080/HTML/index.html');
